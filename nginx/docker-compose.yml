@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+  web:
+    build: .
+    image: my-nginx
+    network_mode: host
+    command: [nginx-debug, '-g', 'daemon off;']
